@@ -151,7 +151,8 @@ span {
 
 .home-text {
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 0;
+  transform: translateY(-30px);
 }
 
 .home-text h1 {
@@ -320,7 +321,7 @@ header.sticky {
     justify-content: center;
 }
 
-.wrapper {
+.wrappers {
   display: flex;
   align-items: center;
   justify-content: center;
