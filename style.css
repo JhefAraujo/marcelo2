@@ -14,6 +14,10 @@
     background-color: #ff4d05;
 }
 
+a::selection {
+  background-color: white;
+}
+
 span::selection {
     background-color: var(--text-color);
 }
@@ -261,6 +265,8 @@ header.sticky {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.11);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.11);
 }
 
 .seila {
@@ -272,12 +278,14 @@ header.sticky {
 
 .confoto {
   margin: auto;
+  
 }
 
 .confoto img {
   border-radius: 5px;
   height: 120px;
   margin-top: 0px;
+  box-shadow: 0px 0px 59px 13px rgba(0,0,0,1);
 }
 
 .pianista h1 {
@@ -334,23 +342,47 @@ header.sticky {
 
 .arranjador {
     margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
     font-size: x-large;
     background-image: url(bg2.jpg);
     background-size: cover;
     box-shadow: 0px 25px 96px -13px rgba(0,0,0,0.75);
-    z-index: 11111;
 }
 
 .arranjador h2 {
     line-height: 2.9em;
 }
 
+.arranjador h3 {
+  font-weight: lighter;
+  font-size: 0.8em;
+  margin-bottom: 7px;
+}
+
+.arranjador h4 {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.box {
+  margin-bottom: 25px;
+}
+
+.caixa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  margin: auto;
+}
+
 .arranjador img {
     height: 130px;
     width: 130px;
     border-radius: 25px;
-    margin-bottom: 25px;
 }
 
 .arranjador a {
@@ -359,11 +391,80 @@ header.sticky {
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 
+.laranja {
+  font-size: large;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  background-color: rgba(12, 4, 0, 0.705);
+  width: 400px;
+  border: 1px solid rgba(165, 165, 165, 0.555);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1em;
+  margin-left: 50vw;
+  backdrop-filter: blur(5px);
+  animation: infinite 5s ease-in-out translocar;
+  animation-delay: 2s;
+  box-shadow: 0px 0px 43px 30px rgba(0, 0, 0, 0.808);
+
+}
+
+@keyframes translocar {
+  50% {
+    margin-left: 45vw;
+  }
+  100% {
+    margin-left: 50vw;
+  }
+}
+
+@keyframes deslocar {
+  50% {
+    margin-left: 25vw;
+  }
+  100% {
+    margin-left: 20vw;
+  }
+}
+
+.laranja::selection {
+  background-color: white;
+}
+
+.branco {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  background-color: rgba(12, 4, 0, 0.705);
+  width: 400px;
+  border: 1px solid rgba(165, 165, 165, 0.555);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1em;
+  margin-left: 20vw;
+  backdrop-filter: blur(5px);
+  animation: infinite 5s ease-in-out deslocar;
+  box-shadow: 0px 0px 43px 30px rgba(0, 0, 0, 0.801);
+}
+
 .regente {
+  padding-top: 50px;
+  background-color: black;
+  height: 1300px;
   font-family: 'DM Sans', sans-serif;
   transition: background .4s ease-in;
-  background-color: #1105017e;
-  backdrop-filter: blur(35px);
+  background-image: url(regente.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.regente h2 {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 2em;
 }
 
 input[type=radio] {
@@ -440,6 +541,11 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   row-gap: 20px;
+}
+
+.cart:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.05);
 }
 
 .cart > .imagem {
