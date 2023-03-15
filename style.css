@@ -793,15 +793,27 @@ input[type=radio] {
   margin: auto;
   padding-top: 50px;
   column-gap: 25px;
-  font-size: small;
+  font-size: 1em;
 }
 
 .texto2 {
   margin-left: 75px;
 }
 
+.texto3 {
+  margin-left: -45px;
+}
+
+.texto4 {
+  margin-left: -35px;
+}
+
 .texto5 {
-  margin-left: -80px;
+  margin-left: -150px;
+}
+
+.textoj {
+  margin-left: -75px;
 }
 
 #imgprof2 {
