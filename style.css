@@ -949,6 +949,10 @@ h1 {font-size:1.5em;margin-bottom:55px;}
   background:#cb2028
 }
 
+.btn-whatsapp > span {
+  background:#00860b
+}
+
 /*LinkedIn*/
 .btn-linkedin:hover > i,.btn-linkedin:focus > i {
   color:#007bb6
