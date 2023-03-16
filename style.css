@@ -78,7 +78,12 @@ header {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-right: 70px;
+    margin-right: 50px;
+    transform: translateX(-150px);
+}
+
+.logo img {
+  height: 75px;
 }
 
 span {
@@ -88,6 +93,7 @@ span {
 .navlist {
     display: flex;
     align-items: end;
+    transform: translateX(-150px) translateY(-10px);
 }
 
 .navlist a {
@@ -977,4 +983,27 @@ h1 {font-size:1.5em;margin-bottom:55px;}
 .contato {
   background-color: black;
   height: 450px;
+}
+
+.produtor {
+  background-image: url(bg3.jpg);
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.produtor p {
+  margin-top: 35px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.658);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(173, 173, 173, 0.432);
+  box-shadow: 0px 0px 43px 30px rgba(0, 0, 0, 0.801);
+  padding: 15px;
 }
