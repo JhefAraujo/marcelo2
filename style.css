@@ -267,7 +267,7 @@ span {
   .carousel {
     height: 700px;
   }
-  .body {
+  body {
     background-size: cover;
   }
   img.blocobranco {
