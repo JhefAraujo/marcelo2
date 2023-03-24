@@ -267,6 +267,9 @@ span {
   .carousel {
     height: 700px;
   }
+  .home-text p {
+    color: var(--second-color);
+  }
   body {
     background-size: cover;
   }
@@ -387,10 +390,10 @@ span {
     margin: auto;
   }
   .home-text h1 {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
   }
   .home-text p {
-    transform: translateY(240px);
+    transform: translateY(260px);
     color: white;
   }
   .slide {
@@ -535,7 +538,6 @@ span {
     line-height: 1.1;
 }
 .home-text p {
-    color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 40px;
