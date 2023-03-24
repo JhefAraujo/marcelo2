@@ -266,7 +266,13 @@ span {
 @media (min-width: 1155px) {
   img.blocobranco {
     width: 350px;
-  }  
+  } 
+  #social-platforms {
+    top: 100px;
+  }
+  .mobilespan {
+    display: none;
+  } 
   .carousel {
     height: 700px;
   }
@@ -354,9 +360,25 @@ span {
   }
 }
 
+.contato h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.zap {
+  text-align: center;
+}
+
+.zap a {
+  color: green;
+  text-align: center;
+  font-size: small;
+}
+
 @media (max-width: 1154px) {
   #social-platforms {
     transform: scale(0.8);
+    top: 0px;
   }
   body {
     background-size: 380vw;
@@ -490,7 +512,7 @@ span {
 }
 
 .pianista a {
-  color: var(--main-color);
+  color: white;
 }
 
 .home {
@@ -1100,7 +1122,7 @@ input[type=radio] {
 }
 
 .ig a {
-  color: var(--main-color);
+  color: white;
 }
 
 @media screen and (max-width: 388px) {
@@ -1244,8 +1266,6 @@ h1 {font-size:1.5em;margin-bottom:55px;}
 
 #social-platforms {
   position:relative;
-  top:100px;
-  top:25vh;
   font-size:1rem;
   text-align:center;
   height:250px;
@@ -1374,7 +1394,8 @@ h1 {font-size:1.5em;margin-bottom:55px;}
 
 .contato {
   background-color: black;
-  height: 450px;
+  padding-top: 10px;
+  overflow: hidden;
 }
 
 .produtor {
