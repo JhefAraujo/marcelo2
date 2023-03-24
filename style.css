@@ -54,7 +54,6 @@ span::selection {
 body {
     color: var(--text-color);
     background-image: url(bg.jpg);
-    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -268,6 +267,30 @@ span {
   .carousel {
     height: 700px;
   }
+  .body {
+    background-size: cover;
+  }
+  img.blocobranco {
+    display: block;
+    margin: auto;
+    background-color: rgba(12, 4, 0, 0.705);
+    border: 1px solid rgba(165, 165, 165, 0.555);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+  }
+  .branco {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+  }
+  .laranja {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+  }
   .seila {
     text-align: center;
     align-items: center;
@@ -284,8 +307,7 @@ span {
     transform: translateY(-30px);
   }
   .branco {
-    animation: infinite 5s ease-in-out deslocar;
-    margin-left: 20vw;
+    animation: infinite 5s ease-in-out translocar;
   }
   .imgprof2 {
     margin-left: 50px;
@@ -305,7 +327,6 @@ span {
   }
   .laranja {
     animation: infinite 5s ease-in-out deslocar;
-    margin-left: 20vw;
   }
   .produtor {
     background-image: url(bg3.jpg);
@@ -331,6 +352,18 @@ span {
   #social-platforms {
     transform: scale(0.8);
   }
+  body {
+    background-size: 380vw;
+  }
+  img.blocobranco {
+    display: block;
+    margin: auto;
+    background-color: rgba(12, 4, 0, 0.705);
+    border: 1px solid rgba(165, 165, 165, 0.555);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+  }
 
   html {
     overflow-x: hidden;
@@ -352,6 +385,13 @@ span {
     transform: scale(0.8);
     text-align: center;
     margin: auto;
+  }
+  .home-text h1 {
+    transform: translateY(-40px);
+  }
+  .home-text p {
+    transform: translateY(240px);
+    color: white;
   }
   .slide {
     margin-right: 150px;
@@ -716,7 +756,6 @@ header.sticky {
 .laranja {
   font-size: large;
   text-align: center;
-  margin-bottom: 20px;
   color: var(--main-color);
   background-color: rgba(12, 4, 0, 0.705);
   width: 400px;
@@ -754,7 +793,6 @@ header.sticky {
 
 .branco {
   text-align: center;
-  margin-bottom: 20px;
   color: white;
   background-color: rgba(12, 4, 0, 0.705);
   width: 400px;
@@ -770,10 +808,14 @@ header.sticky {
   width: 470px;
 }
 
+img.branco {
+  height: 200px;
+}
+
 .regente {
   padding-top: 50px;
   background-color: black;
-  height: 1400px;
+  padding-bottom: 50px;
   width: 100vw;
   font-family: 'DM Sans', sans-serif;
   transition: background .4s ease-in;
@@ -1074,14 +1116,6 @@ input[type=radio] {
 @media screen and (max-width: 1323px) and (min-width: 1155px) {
   .navlist {
     display: none;
-  }
-  .branco {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .laranja {
-    margin-left: auto;
-    margin-right: auto;
   }
   .logo {
     margin: auto;
