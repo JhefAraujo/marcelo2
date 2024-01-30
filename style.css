@@ -51,6 +51,20 @@ span::selection {
     --p-font: 1.1rem;
 }
 
+.cv {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  position: absolute;
+  top: 8vw;
+  z-index: 99999;
+  right: 5vw;
+  cursor: pointer;
+}
+
 body {
     color: var(--text-color);
     background-image: url(bg.jpg);
@@ -78,6 +92,7 @@ header {
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 .wrappermenu {
@@ -261,6 +276,9 @@ span {
   margin: 8px;
   margin-left: auto;
   display: none;
+}
+.linker {
+  color: white;
 }
 
 @media (min-width: 1155px) {
@@ -1131,6 +1149,12 @@ input[type=radio] {
   }
   .branco {
     transform: scale(0.7) translateX(-5%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    transform: translateX(-70px);
   }
 }
 
