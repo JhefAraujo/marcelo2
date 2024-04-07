@@ -12,5 +12,4 @@
     }
 
   
-    console.log('Posição vertical do scroll:', scrollTopPosition);
   });

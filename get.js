@@ -59,4 +59,33 @@ async function getElements() {
     document.getElementById("decimoquintoimagemregente").src = JSON.parse(data)[44][0];
 }
 
+async function getCarousel() {
+    const requestOptions = {
+        method: "GET",
+        redirect: "follow",
+    };
+
+    await fetch(
+        "https://script.google.com/macros/s/AKfycbzdmuxysDxxoGGJ3a6YCl6WBKISZTCiP1zW3IbdsTGg7y9mHgBwmG9oGy6a58JW5Zm9Mg/exec",
+        requestOptions
+    )
+        .then((response) => response.text())
+        .then((result) => (data = result))
+        .catch((error) => console.error(error));
+
+  //  for (let i = 0; i < JSON.parse(data).length; i++) {
+  //      document.getElementById('lista').innerHTML = `<div class="slide-item" data-slide="item" data-index="0">
+  //      <div class="slide-content">
+  //          <img class="slide-image" src="${JSON.parse(data)[i][1]}" alt="Fotos Marcelo" />
+  //          <div class="slide-description">
+  //              <h4>${JSON.parse(data)[i][1]}</h4>
+  //          </div>
+  //      </div>
+  //  </div>`
+  //  }
+
+
+}
+
 getElements();
+getCarousel();
